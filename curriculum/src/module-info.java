@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author smba
+ *
+ */
+module kari {
+}
