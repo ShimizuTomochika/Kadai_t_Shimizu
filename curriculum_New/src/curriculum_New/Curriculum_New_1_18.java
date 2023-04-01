@@ -47,7 +47,7 @@ public class Curriculum_New_1_18{
 		}
 
 	// Q6：引数にQ5で作成したメソッドを入れて受け取った配列の要素の平均値をコンソールに出力するメソッドを作成してください。
-		public static void aveg(int[] indexs) {
+		public static double aveg(int[] indexs) {
 			int av = 0;
 			for(int index:indexs) {
 				System.out.println("Q5出力結果");
@@ -59,9 +59,19 @@ public class Curriculum_New_1_18{
 			System.out.println("Q6出力結果");
 			System.out.println(ave);
 			System.out.println();
+			
+			return ave;
 		}
-	
+		
+		public static boolean boo(double ave) {
+			if(ave < 50) {
+				return true;
+			}else {
+				return false;
+			}
+		}
     public static void main(String[] args) {
+    	// 作成したメソッドをここで呼び出してください
     	// Q1
     	hello("Hello",11);
     	// Q2
@@ -71,7 +81,7 @@ public class Curriculum_New_1_18{
     	ave(index);
     	// Q4
     	sum(1.4,1.6);
-    	// Q5,Q6
-    	aveg(rum(5));
+    	// Q5,Q6,Q7
+    	System.out.println(boo(aveg(rum(5))));
      }
 }
